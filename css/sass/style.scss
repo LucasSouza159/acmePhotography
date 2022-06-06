@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import "mixins";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #eee;
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+}
+.container{
+    @include container;
+    img{
+        width: 600px;
+        height: 800px;
+    }
+    .container-texto{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #333;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: rgb(212, 212, 212);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #333;
+        border: 1px solid rgb(221, 221, 221);
+        padding: 15px 30px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+}
+.container-ourwork{
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: #ccc;
+    .ourwork{
+        margin: 0;
+        background-color: #333;
+        padding-top: 15px;
+    }
+    img{
+        width: 1000px;
+        margin-top: 20px;
+    }
+    .work{
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        p{
+            letter-spacing: 0;
+        }
+    }
+}
+.footer{
+    text-align: center;
+    line-height: 2;
+    color: #333;
+    h2{
+        font-size: 50px;
+    }
+}
